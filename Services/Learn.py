@@ -15,10 +15,3 @@ with open(DATA_PATH, 'r') as csvFile:
 
 clf= tree.DecisionTreeClassifier()
 clf= clf.fit(x, y)
-
-# new_data= [[190,89,43], [160,56,39]]
-# answer= clf.predict(new_data)
-
-
-# print(answer[0]) #must be male
-# print(answer[1]) #must be female
