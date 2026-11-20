@@ -7,3 +7,4 @@ class Predict(BaseModel):
     
 class Response(BaseModel):
     gender: str
+    confidence: int
