@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #2563EB;
+  --primary-light: #60A5FA;
+  --soft-blue: #DBEAFE;
+  --background: #EFF6FF;
+  --cyan: #06B6D4;
+
+  --heading: #0F172A;
+  --text: #64748B;
+
+  --surface: #FFFFFF;
+  --border: #E2E8F0;
+}
+
+@font-face {
+  font-family: "vazir";
+  src: url("../public/fonts/Vazir/Vazir-Medium-FD.eot");
+  src:
+    url("../public/fonts/Vazir/Vazir-Medium-FD.woff") format("woff"),
+    url("../public/fonts/Vazir/Vazir-Medium-FD.ttf") format("opentype");
+}
+
+*{
+  transition: 0.25s all;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: vazir;
+}
+
+input{
+  outline: 0px;
+}
+
+.hero{
+  background-image: url("../public/hero.jpg");
+  background-size: cover;
+}
