@@ -54,7 +54,7 @@ export default function HeroForm() {
 
   return (
     <>
-      <div className="py-8 px-6 bg-(--surface) border border-(--border) rounded-2xl shadow-2xl flex flex-col gap-4 w-[90svw] md:w-max">
+      <div className="py-8 px-6 bg-(--surface) border border-(--border) rounded-2xl shadow-2xl flex flex-col gap-4 w-[90svw] md:w-max z-10">
         <div className="flex gap-1 items-center">
           <User2 className="text-(--primary)" fill="#2563EB" size={28} />
           <p className="text-(--heading) font-bold text-[18px]">
@@ -63,11 +63,11 @@ export default function HeroForm() {
         </div>
 
         <form
-          className="flex-col flex gap-4 items-center"
+          className="flex-col flex gap-4 items-center w-full"
           method="POST"
           onSubmit={(e) => handleSubmit(e)}
         >
-          <div className="flex-col md:flex-row flex gap-4 items-center">
+          <div className="flex-col md:flex-row flex gap-4 items-center w-full">
             <div className="flex flex-col gap-2 w-full">
               <label
                 htmlFor="height"
@@ -79,7 +79,7 @@ export default function HeroForm() {
                 type="text"
                 name="height"
                 id="height"
-                className="px-2 py-1 border border-(--border) rounded focus:bg-(--soft-blue)"
+                className="px-2 py-1 border border-(--border) rounded focus:bg-(--soft-blue) w-full"
                 onChange={(e) => setHeight(Number(e.target.value))}
               />
             </div>
@@ -95,7 +95,7 @@ export default function HeroForm() {
                 type="text"
                 name="weight"
                 id="weight"
-                className="px-2 py-1 border border-(--border) rounded focus:bg-(--soft-blue)"
+                className="px-2 py-1 border border-(--border) rounded focus:bg-(--soft-blue) w-full"
                 onChange={(e) => setWeight(Number(e.target.value))}
               />
             </div>
@@ -111,7 +111,7 @@ export default function HeroForm() {
                 type="text"
                 name="shoe_size"
                 id="shoe_size"
-                className="px-2 py-1 border border-(--border) rounded focus:bg-(--soft-blue)"
+                className="px-2 py-1 border border-(--border) rounded focus:bg-(--soft-blue) w-full"
                 onChange={(e) => setShoe_size(Number(e.target.value))}
               />
             </div>

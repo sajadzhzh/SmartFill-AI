@@ -8,12 +8,12 @@ export default function Predict({
   confidence: number;
 }) {
   return (
-    <section className="py-8 px-6 bg-(--primary)/30 border border-(--primary)/50 rounded-2xl shadow-2xl flex gap-4 w-[90svw] md:w-max">
-      <div className="bg-(--primary)/40 py-2 px-4 text-(--primary) rounded-4xl flex items-center">
+    <section className="z-10 py-8 px-6 bg-(--primary)/30 border border-(--primary)/50 rounded-2xl shadow-2xl flex flex-col md:flex-row gap-4 w-[90svw] md:w-max">
+      <div className="bg-(--primary)/40 py-2 px-4 text-(--primary) rounded-4xl flex items-center justify-center">
         {isMale ? <FaPerson size={64} /> : <FaPersonDress size={64} />}
       </div>
 
-      <div className="flex flex-col gap-4 items-center border-e border-(--primary) px-4 ">
+      <div className="flex flex-col gap-4 items-center border-b md:border-b-0 md:border-e border-(--primary) px-4 ">
         <p className="text-(--primary)">نتیجه پیش‌بینی</p>
         <h2 className="text-(--primary) text-[34px] font-bold">
           {isMale ? "مرد" : "زن"}

@@ -10,17 +10,17 @@ export default function Hero() {
           هوش مصنوعی، ساده و سریع
         </div>
 
-        <h1 className="text-[38px] font-bold text-(--heading)">
+        <h1 className="text-[38px] font-bold text-(--heading) text-center w-[90svw] md:w-max">
           پیش‌بینی هوشمند جنسیت
         </h1>
-        <p className="text-[20px] text-(--heading)">
+        <p className="text-[20px] text-(--heading) text-center w-[90svw] md:w-max">
           با وارد کردن سه ویژگی، نتیجه را در چند لحظه مشاهده کنید.
         </p>
 
         <HeroForm />
       </div>
 
-      <div className="w-full absolute h-[10svh] bg-linear-to-t from-(--background) to-transparent top-[90svh]"></div>
+      <div className="w-full absolute h-[10svh] bg-linear-to-t from-(--background) to-transparent top-[90svh] z-0"></div>
     </section>
   );
 }
